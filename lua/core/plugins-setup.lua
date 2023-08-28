@@ -26,7 +26,12 @@ return require('packer').startup(function(use)
     "nvim-treesitter/nvim-treesitter"
   }
 
-
+  -- Telescope buscador de archivos
+  use {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.0",
+    requires = {{"nvim-lua/plenary.nvim"}}
+  }
 
   cmd[[set background=dark]]  
   cmd[[colorscheme palenight]]
